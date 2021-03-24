@@ -1,0 +1,37 @@
+h1 {
+    color: brown;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(135, 222, 147);
+    padding: 0.5em;
+    font-size: 1.5rem;
+}
+ul {
+    padding-left: 1rem;
+    list-style-type: none;
+}
+
+nav ul li {
+    background-color: cadetblue;
+    color: rgb(255, 8, 0);
+    margin-bottom: 0.5rem;
+    padding: 0.25rem;
+}
+
+nav ul li a{
+    color: rgb(255, 0, 221);
+}
+
+article {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid rgb(255, 8, 0);
+}
+footer p a{
+    display: inline-block;
+    padding: 0.5rem;
+    background-color: royalblue;
+    color: beige;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    box-shadow: #000 5px 5px 5px 0px;
+}
