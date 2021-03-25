@@ -1,37 +1,80 @@
-h1 {
-    color: brown;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(135, 222, 147);
-    padding: 0.5em;
+:root{
+    --cor-fundo-destaque: rgb(243, 136, 13);
+    --cor-frente-destaque: #fff;
+    --espacamento-padrao: 0.5rem;
+    --font-family-padrao: Arial, Helvetica, sans-serif;
+}
+    h1 {
+    padding: var(--espacamento-padrao);
+    --font-family-padrao: Arial, Helvetica, sans-serif;
+    background-color: var(--cor-fundo-destaque);
+    padding: var(--espacamento-padrao);
     font-size: 1.5rem;
 }
 ul {
     padding-left: 1rem;
     list-style-type: none;
 }
+ol {
+    padding-left: 1rem;
+    list-style-type: none;
+    --font-family-padrao: Arial, Helvetica, sans-serif;
 
-nav ul li {
-    background-color: cadetblue;
-    color: rgb(255, 8, 0);
-    margin-bottom: 0.5rem;
-    padding: 0.25rem;
+}
+ul li {
+    --font-family-padrao: Arial, Helvetica, sans-serif;
 }
 
-nav ul li a{
-    color: rgb(255, 0, 221);
-}
+
 
 article {
+    border: 2px solid var(--cor-fundo-destaque);
+    padding: 1.25rem;
     display: flex;
     justify-content: space-between;
-    border: 2px solid rgb(255, 8, 0);
+
 }
+article section h2{
+    padding: var(--espacamento-padrao);
+    font-family: var(--font-family-padrao);
+    background-color: var(--cor-fundo-destaque);
+    padding: var(--espacamento-padrao);
+    font-size: 1.25rem;
+    margin-top: 0;
+    
+}
+article section p {
+    font-family: var(--font-family-padrao);
+}
+article section {
+    width: 420px;
+    border: 1px solid var(--cor-fundo-destaque);
+    box-sizing: border-box;
+    padding: var(--espacamento-padrao);
+}
+article section h{
+    width: 420px;
+    border: 1px solid rgb(212, 115, 5);
+    box-sizing: border-box;
+    padding: var(--espacamento-padrao);
+}
+
 footer p a{
     display: inline-block;
-    padding: 0.5rem;
+    padding: var(--espacamento-padrao);
     background-color: royalblue;
-    color: beige;
+    padding: var(--espacamento-padrao);
     text-decoration: none;
     border-radius: 0.5rem;
     box-shadow: #000 5px 5px 5px 0px;
+}
+
+@media only screen and (min-width: 768px) {
+    article {
+        display: flex;
+        flex-direction: row;
+    }
+    article section {
+        width: 45vW;
+    }
 }
